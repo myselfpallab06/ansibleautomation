@@ -1,5 +1,5 @@
 ---
-- name: PatchOS
+- name: UpdateApp
   hosts: all
   remote_user: root
   become: true
