@@ -1,8 +1,9 @@
 ---
-- name: UpdateApp
+- name: UpdateAV
   hosts: all
   remote_user: root
   become: true
+  
   tasks:
-  - name: install git
-    yum: name=git state=present
+  - name: update CrowdStrike
+    yum: name=CrowdStrike state=present
