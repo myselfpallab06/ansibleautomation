@@ -1,0 +1,8 @@
+---
+- name: PatchOS
+  hosts: all
+  remote_user: root
+  become: true
+  tasks:
+  - name: install java
+    yum: name=java state=present
